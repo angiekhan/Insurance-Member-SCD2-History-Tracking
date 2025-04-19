@@ -6,15 +6,6 @@
 
 **SCD2 implementation for tracking member address changes with full audit capabilities**
 
-## 🧠 Project Highlights
-
-```mermaid
-graph LR
-    A[Source System] -->|Change Data| B(SCD2 Processor)
-    B --> C[Current Records]
-    B --> D[Historical Versions]
-    C & D --> E[Analytics & Reporting]
-
 Features
 Temporal Tracking - Complete history of member address changes
 Auto-Expiration - Intelligent versioning with valid_from/valid_to timestamps
