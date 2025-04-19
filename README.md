@@ -8,6 +8,7 @@ Project Summary
 The project implements Slowly Changing Dimension Type 2 (SCD2) using PySpark and Delta Lake on Databricks.
 It tracks historical changes (like address updates) for insurance members while preserving full change history.
 
+
 ✅ Key Features:
 
 Maintain full history of changes.
@@ -19,7 +20,9 @@ Insert new "current" records when changes occur.
 Built with Delta Lake for ACID guarantees.
 
 
-🛠 Tech Stack 
+
+
+✅ Tech Stack 
 PySpark 3.3+	Distributed data transformations
 
 Delta Lake 2	ACID-compliant data lake (Versioned, reliable data storage)
