@@ -3,17 +3,33 @@
 
 **SCD2 implementation for tracking member address changes with full audit capabilities**
 
-Features
-Temporal Tracking - Complete history of member address changes
-Auto-Expiration - Intelligent versioning with valid_from/valid_to timestamps
-ACID Compliance - Delta Lake ensures reliable updates
-Audit Ready - created_at/updated_at metadata columns
-Production-Grade - Handles concurrent writes and schema evolution
+Project Summary
+
+The project implements Slowly Changing Dimension Type 2 (SCD2) using PySpark and Delta Lake on Databricks.
+It tracks historical changes (like address updates) for insurance members while preserving full change history.
+
+✅ Key Features:
+
+Maintain full history of changes.
+
+Automatically expire old records when changes are detected.
+
+Insert new "current" records when changes occur.
+
+Built with Delta Lake for ACID guarantees.
+
 
 🛠 Tech Stack 
 PySpark 3.3+	Distributed data transformations
-Delta Lake 2	ACID-compliant data lake
-Databricks	Managed Spark environment
-Python 3.8+	Pipeline control flow
-Spark SQL	Table DDL and analytics
+
+Delta Lake 2	ACID-compliant data lake (Versioned, reliable data storage)
+
+Databricks	Managed Spark environment (Analytics platform)
+
+Python 3.8+	Pipeline control flow (Script orchestration)
+
+Spark SQL	Table DDL and analytics (Table creation and management)
+
+
+
 
